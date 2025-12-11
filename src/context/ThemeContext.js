@@ -19,25 +19,16 @@ export const CustomThemeProvider = ({ children }) => {
           primary: {
             main: mode === "light" ? "#c63031" : "#c63031",
           },
-          secondary: {
-            main: mode === "light" ? "#ff9800" : "#ffb74d",
-            contrastText: "#000",
-          },
-          background: {
-            default: mode === "light" ? "#f5f5f5" : "#645d6a",
-            paper: mode === "light" ? "#fff" : "#1d1d1d", // фон Card, Paper и т.д.
-            Box: mode === "light" ? "#fff" : "#645d6a", // фон Card, Paper и т.д.
-          },
         },
       }),
     [mode]
   );
 
-return (
+  return (
     <CustomThemeContext.Provider value={{ toggleTheme, mode }}>
       <ThemeProvider theme={theme}>
-        <CssBaseline /> 
-        <Box sx={{ minHeight: '100vh', bgcolor: 'background.default' }}>
+        <CssBaseline />
+        <Box sx={{ minHeight: "100vh", bgcolor: "background.default" }}>
           {children}
         </Box>
       </ThemeProvider>

@@ -1,6 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { getCards } from "../api/cardApi";
-import { Box, Paper, Table, TableBody, TableCell, TableHead, TableRow, Typography } from "@mui/material";
+import {
+  Box,
+  Paper,
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableRow,
+  Typography,
+} from "@mui/material";
 
 export default function CardsPage() {
   const [cards, setCards] = useState([]);
@@ -11,7 +20,9 @@ export default function CardsPage() {
 
   return (
     <Box p={3}>
-      <Typography variant="h4" mb={3}>Cards</Typography>
+      <Typography variant="h4" mb={3}>
+        Cards
+      </Typography>
 
       <Paper>
         <Table>

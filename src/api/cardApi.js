@@ -1,8 +1,8 @@
-import api from "./axiosInstance";
+import { usersAndCardsApi } from "./axiosInstance";
 
 export const getCards = (page = 0, size = 10) =>
-  api.get(`/cards?page=${page}&size=${size}`);
+  usersAndCardsApi.get(`/cards?page=${page}&size=${size}`);
 
-export const createCard = (dto) => api.post("/cards", dto);
-export const updateCard = (dto) => api.put("/cards", dto);
-export const deleteCard = (id) => api.delete(`/cards/${id}`);
+export const createCard = (dto) => usersAndCardsApi.post("/cards", dto);
+export const updateCard = (dto) => usersAndCardsApi.put("/cards", dto);
+export const deleteCard = (id) => usersAndCardsApi.delete(`/cards/${id}`);

@@ -44,7 +44,8 @@ export default function Footer() {
       </Box>
 
       <Typography sx={{ fontSize: "0.9rem" }}>
-        © {new Date().getFullYear()} Innowise Internship by @dnoviy (Dmitry Novogrodsky)
+        © {new Date().getFullYear()} Innowise Internship by @dnoviy (Dmitry
+        Novogrodsky)
       </Typography>
     </Box>
   );
